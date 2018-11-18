@@ -73,6 +73,7 @@ function second_func(data) {
                 children: []
             }
             child_obj.name = tree[i].name
+            console.log(child_obj.link)
 
             for (j = 0; j < tree[i].types.length; j++) { 
                 const child_2ndlayer_obj = {
@@ -90,9 +91,18 @@ function second_func(data) {
                     }
                     child_2ndlayer_obj.children.push(child_3rdlayer_obj)
                 }
+                if (child_2ndlayer_obj.name === 'food') {
+                    const child_3rdlayer_obj = {
+                        name: 'https://www.google.com/search?q=' + (tree[i].name).replace(/ /g,"-"),
+                        children: []
+                    }
+                    child_3rdlayer_obj.name.link("https://www.w3schools.com")
+                    child_2ndlayer_obj.children.push(child_3rdlayer_obj)
+
+                }
                 if (child_2ndlayer_obj.name === 'meal_delivery') {
                     const child_3rdlayer_obj = {
-                        name: 'https://postmates.com/search?q=' + tree[i].name,
+                        name: 'https://postmates.com/search?q=' + (tree[i].name).replace(/ /g,"-"),
                         children: []
                     }
                     child_2ndlayer_obj.children.push(child_3rdlayer_obj)
@@ -153,7 +163,7 @@ function second_func(data) {
             }
 
             new_tree_obj.children.push(child_obj)
-
+   
         }
 
         third_func(new_tree_obj)

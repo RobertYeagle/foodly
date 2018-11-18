@@ -169,7 +169,7 @@ nav ul ul {
 
 /* Display Dropdowns on Hover */
 nav ul li:hover > ul {
-	display:inherit;
+  display:inherit;
 }
 
 /* First Tier Dropdown */
@@ -234,15 +234,5 @@ nav ul ul li {
   margin-top: 15px;
   text-align: right;
   color: #097FB2;
-}
-
-.btn {
-  width: 20%;
-  float: left;
-  font-size: 40px;
-  margin-top: 8px;
-  text-align: right;
-  color: #FFFFFF;
-  display: block;
 }
 

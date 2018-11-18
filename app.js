@@ -171,7 +171,7 @@ function third_func(data) {
         console.log(tree)
 
         // Set the dimensions and margins of the diagram
-        var margin = {top: 0, right: 90, bottom: 30, left: 120},
+        var margin = {top: 0, right: 90, bottom: 30, left: 130},
             width = 1420 - margin.left - margin.right,
             height = 760 - margin.top - margin.bottom;
 

@@ -154,18 +154,12 @@ function second_func(data) {
                         }
                         // child_4thlayer_obj.name.link('https://www.google.com/maps/search/?api=1&query' + tree[i].geometry.location.lat + ', ' + tree[i].geometry.location.lng);
                         child_3rdlayer_obj.children.push(child_4thlayer_obj)
-
                     }
-                
                 }
-                
 
             }
-
             new_tree_obj.children.push(child_obj)
-   
         }
-
         third_func(new_tree_obj)
 }
 
@@ -461,9 +455,6 @@ function deleteMessage(id) {
 
   messageReference.remove();
 }
-
-
-
 
 
 // begin the script
